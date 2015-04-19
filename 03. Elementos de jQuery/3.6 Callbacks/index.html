@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Responsive Web Desing-->
+	
+	<title></title>
+
+	<style type="text/css">
+		#objetivo{
+			margin-top: 20px;
+			background-color: yellow;
+			width: 200px;
+			height: 200px;
+			border: 2px dashed black;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script><!--jQuery-->
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#esconder").click(function(){
+			$("#objetivo").hide(5000, function(){
+				alert("Me ejecute despues de que se termino de esconder :)");
+			});//GENIAL!!! SOLO DESPUES DE EJECUTAR SE LANZA
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<button id="esconder">¡Esconder!</button>
+	<div id="objetivo"></div>
+</body>
+
+</html>

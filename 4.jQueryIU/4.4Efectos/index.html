@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Responsive Web Desing-->
+	
+	<title>Efectos</title>
+
+	<style>
+		.efect{
+			width: 200px;
+			height: 200px;
+			border: 3px dashed black;
+			position: relative;
+			background-color: #F5A9F2;
+		}
+		#izquierda{
+			float: left;
+		}
+		#derecha{
+			float: right;
+		}
+
+		#derecha div.efect{
+			background-color: #58FAF4;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script><!--jQuery-->
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#button1").click(function(){
+			$("#efect1").effect("blind");
+		});
+
+		$("#button2").click(function(){
+			$("#efect2").effect("bounce");
+		});
+
+		$("#button3").click(function(){
+			$("#efect3").effect("shake");
+		});
+
+		$("#button4").click(function(){
+			$("#efect4").effect("clip");
+		});
+
+		$("#button5").click(function(){
+			$("#efect5").effect("drop");
+		});
+
+		$("#button6").click(function(){
+			$("#efect6").effect("explode");
+		});
+
+		$("#button7").click(function(){
+			$("#efect7").effect("puff");
+		});
+
+		$("#button8").click(function(){
+			$("#efect8").effect("fade");
+		});
+	});
+	</script>
+</head>
+
+<body>
+<div id="izquierda">
+	<button id="button1">¡Efectos!</button>
+	<br>
+	<div id="efect1" class="efect">
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+	<br>
+	<button id="button2">¡Efectos!</button>
+	<br>
+	<div id="efect2" class="efect"> 
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+	<br>
+	<button id="button3">¡Efectos!</button>
+	<br>
+	<div id="efect3" class="efect"> 
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+
+	<br>
+	<button id="button7">¡Efectos!</button>
+	<br>
+	<div id="efect7" class="efect"> 
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+</div>
+<div id="derecha">
+	
+	<button id="button4">¡Efectos!</button>
+	<br>
+	<div id="efect4" class="efect">
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+	<br>
+	<button id="button5">¡Efectos!</button>
+	<br>	
+	<div id="efect5" class="efect">
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+
+	<br>
+	<button id="button6">¡Efectos!</button>
+	<br>	
+	<div id="efect6" class="efect">
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+	
+	<br>
+	<button id="button8">¡Efectos!</button>
+	<br>	
+	<div id="efect8" class="efect">
+		<h3>Title</h3>
+		<p>Text</p>
+	</div>
+</div>
+</body>
+
+</html>

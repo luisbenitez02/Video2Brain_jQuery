@@ -1,0 +1,12 @@
+#lienzo, #content{
+	width: 800px;
+	height: 500px;
+}
+#lienzo{
+	border: 5px ridge #6B3E00;
+	margin-bottom: 20px;
+}
+#content{
+	/*margin: 0 auto;*/
+	text-align: center;
+}

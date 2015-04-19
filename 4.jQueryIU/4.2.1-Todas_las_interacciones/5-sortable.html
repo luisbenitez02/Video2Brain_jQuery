@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!--Responsive Web Desing-->
+	
+	<title>Resizable</title>
+	<!-- Tengo que traerme esta hoja de estilo -->
+	<!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">-->
+	<style>
+		ul{
+			list-style: none;
+		}
+		li{
+			border: 1px dashed red;
+			width: 500px;
+			height: 30px;
+		}
+		ul .ui-selecting{
+			background-color: yellow;
+		}
+
+		ul .ui-selected{
+			background: purple;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script><!--jQuery-->
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("ul").sortable();
+		});
+	</script>
+
+</head>
+
+<body>
+<h3>Puedes reordenarnos :)</h3>
+	<ul id="seleccionable">
+		<li>Manzanas</li>
+		<li>peras</li>
+		<li>Bananos</li>
+		<li>Naranjas</li>
+		<li>Mango</li>
+	</ul>
+</body>
+
+</html>

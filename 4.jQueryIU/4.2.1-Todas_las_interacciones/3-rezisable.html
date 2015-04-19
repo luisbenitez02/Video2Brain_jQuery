@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!--Responsive Web Desing-->
+	
+	<title>Resizable</title>
+	<!-- Tengo que traerme esta hoja de estilo -->
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<style>
+		#resizable{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			border:1px solid black;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script><!--jQuery-->
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#resizable").resizable();
+		});
+	</script>
+
+</head>
+
+<body>
+	<div id="resizable">
+		<h3>I am a Big Title</h3>
+		<p>I am a paragraph, son of a div, descendant of html</p>
+	</div>
+</body>
+
+</html>

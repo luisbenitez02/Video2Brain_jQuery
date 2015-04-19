@@ -1,0 +1,9 @@
+.noticia{
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+	font-family: Arial;
+	font-height: 10px;
+	color:grey;
+	background: rgb(200,200,200);
+}

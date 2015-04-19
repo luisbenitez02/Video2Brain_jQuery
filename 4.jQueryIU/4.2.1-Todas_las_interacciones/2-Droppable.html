@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Responsive Web Desing-->
+	
+	<title></title>
+
+	<style type="text/css">
+		#mueve{
+			width: 100px;
+			height: 100px;
+			border: 1px solid red;
+			background-color: yellow;
+		}
+
+		#cajon{
+			margin-top: 20px;
+			width: 400px;
+			height: 400px;
+			border: 3px dashed black;
+			background-color: purple;
+			color: white;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script><!--jQuery-->
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#mueve").draggable();
+		$("#cajon").droppable({drop:soltado});
+
+		function soltado(){
+			$("#cajon").css("background-color","red");
+			$("#cajon").css("border","5px dashed purple");
+		}
+	});
+	</script>
+</head>
+
+<body>
+	<div id="mueve">Mueveme</div>
+	<div id="cajon">Suelta el elemento aqui</div>
+</body>
+
+</html>
